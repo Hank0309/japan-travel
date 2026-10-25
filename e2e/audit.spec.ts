@@ -1,8 +1,9 @@
+import { appUrl } from './urls';
 import { test, expect, type Page } from '@playwright/test';
 import fs from 'node:fs/promises';
 
 async function ready(page: Page, route = '/expenses') {
-  await page.goto(route);
+  await page.goto(appUrl(route));
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 }
 async function addExpense(page: Page) {
@@ -39,11 +40,9 @@ test('跨區交通導航與手機搜尋尺寸', async ({ page }) => {
     expect(url.searchParams.get('origin')).toBeTruthy();
   }
   await page.getByRole('button', { name: /DAY 4 / }).click();
-  const tour = page
-    .locator('.stop-card')
-    .filter({
-      has: page.getByRole('heading', { name: '勝尾寺', exact: true }),
-    });
+  const tour = page.locator('.stop-card').filter({
+    has: page.getByRole('heading', { name: '勝尾寺', exact: true }),
+  });
   const link = tour.getByRole('link', { name: '導航至勝尾寺' });
   await expect(link).toContainText('查看地點');
   expect(new URL((await link.getAttribute('href'))!).pathname).toBe(

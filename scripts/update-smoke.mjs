@@ -8,6 +8,7 @@ const watchdog = setTimeout(() => {
   console.error('FAIL: update smoke exceeded 60 seconds');
   process.exit(1);
 }, 60000);
+const base = process.env.APP_BASE_PATH ?? '/japan-travel/';
 let version = 1;
 const types = {
   '.js': 'text/javascript',
@@ -22,6 +23,11 @@ const server = http.createServer(async (req, res) => {
     let pathname = decodeURIComponent(
       new URL(req.url, 'http://127.0.0.1').pathname,
     );
+    if (!pathname.startsWith(base)) {
+      res.writeHead(404).end();
+      return;
+    }
+    pathname = '/' + pathname.slice(base.length);
     let target = path.resolve(root, '.' + pathname);
     if (!target.startsWith(root + path.sep) && target !== root) {
       res.writeHead(403).end();
@@ -63,7 +69,9 @@ const browser = await chromium.launch();
 try {
   const page = await browser.newPage();
   page.setDefaultTimeout(15000);
-  await page.goto('http://127.0.0.1:4174/expenses');
+  await page.goto(
+    `http://127.0.0.1:4174${base}${base === '/' ? 'expenses' : '#/expenses'}`,
+  );
   await page.getByRole('button', { name: '設定預算與匯率' }).click();
   await page.getByLabel('1 日幣 = 多少台幣').fill('0.22');
   await page.getByRole('button', { name: '儲存設定' }).click();

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import App from './App';
 import './styles.css';
 class Boundary extends React.Component<
@@ -23,10 +23,11 @@ class Boundary extends React.Component<
     );
   }
 }
+const Router = import.meta.env.BASE_URL === '/' ? BrowserRouter : HashRouter;
 createRoot(document.getElementById('root')!).render(
   <Boundary>
-    <BrowserRouter>
+    <Router>
       <App />
-    </BrowserRouter>
+    </Router>
   </Boundary>,
 );

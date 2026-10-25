@@ -4,6 +4,8 @@
 
 ## 本機開啟
 
+目前預設建置基底為 `/japan-travel/`，本機請開啟終端機顯示的完整網址（例如 `http://127.0.0.1:4173/japan-travel/`）。其他主機根目錄部署請先設定 `APP_BASE_PATH=/`。雲端最新狀態見 [部署文件](docs/DEPLOYMENT.md) 開頭；下方舊版雲端狀態尚未代表本次 Pages 發布已完成。
+
 需要 Node.js 24 LTS 與 npm。
 
 ```powershell
@@ -72,4 +74,4 @@ Playwright 使用正式 `dist/`，測試含真實 Service Worker 離線、persis
 
 ## 雲端狀態
 
-Firebase Hosting 設定與 GitHub Actions 已準備。尚未建立 GitHub Repository、Push、建立 Firebase Project 或公開部署；需使用者授權及帳戶存取。`production` 環境應設定人工審核，部署工作流僅接受手動啟動。
+Repository 為 `Hank0309/japan-travel`。使用者已同意公開原始碼與一般行程並發布 GitHub Pages；私人訂位、帳本、PDF 與 OCR 不上傳。Pages 工作流僅接受手動啟動，完整 CI 通過後發布。網站為公開分享，無訪客白名單。Firebase 設定保留供其他主機選用。

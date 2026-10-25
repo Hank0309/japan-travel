@@ -1,4 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
+import { appUrl } from './e2e/urls';
 export default defineConfig({
   testDir: './e2e',
   fullyParallel: false,
@@ -11,7 +12,7 @@ export default defineConfig({
   },
   webServer: {
     command: 'npm run preview -- --port 4173',
-    url: 'http://127.0.0.1:4173',
+    url: appUrl(),
     reuseExistingServer: !process.env.CI,
   },
   projects: [

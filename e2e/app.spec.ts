@@ -1,8 +1,9 @@
+import { appUrl, basePath } from './urls';
 import { test, expect, type Page } from '@playwright/test';
 import path from 'node:path';
 import AxeBuilder from '@axe-core/playwright';
 async function open(page: Page, route = '/') {
-  await page.goto(route);
+  await page.goto(appUrl(route));
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
 }
 async function setupRate(page: Page) {
@@ -53,11 +54,9 @@ test('七日原書行程、導航、編輯與排序持久化', async ({ page }) 
   await expect(page.getByRole('status')).toContainText('行程順序已儲存');
   await page.reload();
   await page.getByRole('button', { name: /DAY 2 / }).click();
-  const card = page
-    .locator('.stop-card')
-    .filter({
-      has: page.getByRole('heading', { name: '清水寺', exact: true }),
-    });
+  const card = page.locator('.stop-card').filter({
+    has: page.getByRole('heading', { name: '清水寺', exact: true }),
+  });
   await expect(card).toContainText('09:10');
   await expect(card).toContainText('測試：慢慢參拜');
   const names = await page.locator('.stop-card h3').allTextContents();
@@ -96,7 +95,7 @@ test('離線新增、重新整理、CRUD 與備份往返', async ({ page, contex
   await page.getByLabel('匯入 JSON 備份').setInputFiles(backupPath!);
   await expect(page.locator('.expense-list')).toContainText('測試抹茶');
   await expect(page.locator('.expense-list')).toContainText('¥800');
-  await page.goto('/itinerary');
+  await page.goto(appUrl('/itinerary'));
   await expect(page.getByRole('heading', { level: 1 })).toHaveText(
     '七日，慢慢旅行',
   );
@@ -114,7 +113,7 @@ test('跨瀏覽器重新啟動仍保留帳本與編輯資料', async ({ browser 
     headless: true,
   });
   const page = context.pages()[0];
-  await page.goto('http://127.0.0.1:4173/expenses');
+  await page.goto(appUrl('/expenses'));
   await setupRate(page);
   await add(page, '重啟後的晚餐', '1200');
   await context.close();
@@ -124,7 +123,7 @@ test('跨瀏覽器重新啟動仍保留帳本與編輯資料', async ({ browser 
   });
   try {
     const second = reopened.pages()[0];
-    await second.goto('http://127.0.0.1:4173/expenses');
+    await second.goto(appUrl('/expenses'));
     await expect(second.locator('.expense-list')).toContainText('重啟後的晚餐');
     await expect(second.locator('.expense-list')).toContainText('¥1,200');
   } finally {
@@ -166,7 +165,7 @@ test('頁面尺寸、深色模式、長日文地址與私人資料不外傳', as
         r.includes('只存本機') || r.includes(encodeURIComponent('只存本機')),
     ),
   ).toBe(false);
-  await page.goto('/info');
+  await page.goto(appUrl('/info'));
   await page.getByRole('button', { name: '來源與待確認', exact: true }).click();
   await expect(
     page.getByRole('heading', { name: '原書待確認清單' }),
@@ -176,9 +175,16 @@ test('PWA manifest、快取範圍與真實離線重開', async ({ page, context 
   await open(page);
   await waitSW(page);
   const manifest = await page.evaluate(
-    async () => await (await fetch('/manifest.webmanifest')).json(),
+    async (base) => await (await fetch(base + 'manifest.webmanifest')).json(),
+    basePath,
   );
   expect(manifest.display).toBe('standalone');
+  expect(manifest.start_url).toBe(basePath);
+  expect(manifest.scope).toBe(basePath);
+  const registration = await page.evaluate(
+    async () => (await navigator.serviceWorker.ready).scope,
+  );
+  expect(new URL(registration).pathname).toBe(basePath);
   expect(manifest.icons).toHaveLength(3);
   for (const icon of manifest.icons) {
     expect((await page.request.get(icon.src)).ok()).toBe(true);
@@ -195,7 +201,7 @@ test('PWA manifest、快取範圍與真實離線重開', async ({ page, context 
     keys.some((k) => k.includes('open-meteo') || k.includes('private/')),
   ).toBe(false);
   await context.setOffline(true);
-  await page.goto('/info');
+  await page.goto(appUrl('/info'));
   await expect(
     page.getByRole('heading', { name: '出發之前，安心一點' }),
   ).toBeVisible();

@@ -1,5 +1,15 @@
 name: Quality checks
-on: [push, pull_request, workflow_dispatch, workflow_call]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      base-path:
+        type: string
+        default: /japan-travel/
+env:
+  APP_BASE_PATH: ${{ inputs.base-path || '/japan-travel/' }}
 permissions:
   contents: read
 jobs:

@@ -1,5 +1,19 @@
 # GitHub 與正式部署
 
+## 目前選擇與存取限制（2026-10-25）
+
+已連接 `Hank0309/japan-travel`。GitHub API 確認目前方案不支援私人 Repository 的 Pages；使用者隨後明確同意改成 Public，公開原始碼與一般行程並部署 GitHub Pages。不包含私人訂位、帳本、PDF 與 OCR。
+
+本機已準備 Pages 子路徑 `/japan-travel/` 與 hash 路由，Pages workflow 僅允許手動啟動。建置其他根目錄主機時先設定 `APP_BASE_PATH=/`；Pages 建置使用 `/japan-travel/`。
+
+Repository → Settings → Pages → Source 選 GitHub Actions。Actions → Deploy GitHub Pages → Run workflow，完整 CI 通過後發布同一 commit 的建置產物。網址為 `https://hank0309.github.io/japan-travel/`。這是公開網站，分享對象不受限制。
+
+私人 Repository 不代表網站有存取控制。若僅供指定旅伴使用，可採 Cloudflare Pages 與 Access Email 白名單，必須同時保護正式、預覽及自訂網域，不可僅啟用預覽保護。需另取得建立服務與帳戶授權；沒有建立 Cloudflare 資源。一般個人 GitHub Pages 不提供此種私人網站權限，GitHub 官方私人 Pages 存取控制適用 Enterprise Cloud 組織。
+
+離線 PWA 已下載的資料不會因移除 Email 權限而遠端刪除；登入閘道與離線使用、登入到期後更新仍需實際驗證。
+
+以下為原始部署規劃，狀態以本節為準。
+
 目前僅本機成果，**沒有公開網址**。未獲授權前不建立雲端資源、不 Push、不部署。沒有設定任何假 project ID、遠端 URL 或 secret。首選 Firebase Hosting。
 
 ## 授權時需要提供
