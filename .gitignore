@@ -1,0 +1,11 @@
+node_modules/
+dist/
+private/
+test-results/
+playwright-report/
+.env*
+!.env.example
+.firebase/
+*.log
+*.tsbuildinfo
+output/

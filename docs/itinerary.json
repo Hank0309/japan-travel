@@ -1,0 +1,1435 @@
+{
+  "version": 1,
+  "timezone": "Asia/Tokyo",
+  "days": [
+    {
+      "id": 1,
+      "date": "2026-10-31",
+      "city": "京都",
+      "title": "初抵關西，夜入京都",
+      "subtitle": "一碗拉麵，開啟七日旅程",
+      "pages": [
+        2,
+        4,
+        5
+      ],
+      "alerts": [
+        "抵達時間有矛盾：p.2 航班 19:15；p.4–5 行程 19:00。請以電子機票為準。",
+        "HARUKA 搭出關後最合適班次；原書 20:00 並非預約車次。"
+      ],
+      "stops": [
+        {
+          "id": "d1-flight",
+          "kind": "transport",
+          "name": "高雄 → 關西機場 T1",
+          "time": "16:25",
+          "summary": "長榮 BR182・KHH → KIX。機票頁抵達 19:15（日本時間）；高雄出發為台灣時間 15:25，時間軸換算為日本 16:25。",
+          "pages": [
+            2,
+            5
+          ],
+          "status": "conflict",
+          "timeLabel": "15:25 台灣（16:25 日本）",
+          "to": "関西国際空港 第1ターミナル",
+          "mode": "transit",
+          "urgent": true,
+          "note": "起降時間尚未向航空公司確認。入境審查 → 領行李 → 1F 抵達大廳 → 2F Railways / JR。"
+        },
+        {
+          "id": "d1-haruka",
+          "kind": "transport",
+          "name": "JR 關空特急 HARUKA",
+          "time": "20:00",
+          "summary": "關西機場站 → 京都站，直達、不轉乘。跟 JR 指標走過 2F 連絡通道。",
+          "pages": [
+            5
+          ],
+          "status": "pdf",
+          "timeLabel": "約 20:00 後",
+          "from": "関西空港駅",
+          "to": "京都駅",
+          "mode": "transit",
+          "duration": "原書估 75–80 分",
+          "budget": "PDF 優惠票 ¥2,200，購買前重查",
+          "sourceIds": [
+            "haruka"
+          ],
+          "note": "優惠票有旅客資格與使用限制。未確認班次、末班與月台；請先看當日營運及到站後發車看板。"
+        },
+        {
+          "id": "d1-kyoto",
+          "kind": "transport",
+          "name": "京都站・八條口",
+          "time": "21:15",
+          "summary": "下車跟「八条口 / Hachijo Exit」指標往南側出站。",
+          "pages": [
+            5
+          ],
+          "status": "pdf",
+          "timeLabel": "約 21:15–21:30",
+          "to": "京都駅 八条口",
+          "mode": "walking"
+        },
+        {
+          "id": "d1-hotel",
+          "kind": "hotel",
+          "name": "都ホテル 京都八条",
+          "time": "21:20",
+          "summary": "Check-in、放行李，休息後再吃晚餐。",
+          "pages": [
+            4,
+            5
+          ],
+          "status": "pdf",
+          "timeLabel": "約 21:20–21:40",
+          "address": "京都市南区西九条院町17",
+          "duration": "八條口步行約 2–5 分",
+          "sourceIds": [
+            "miyako"
+          ]
+        },
+        {
+          "id": "d1-ramen",
+          "kind": "food",
+          "name": "本家第一旭 本店",
+          "time": "22:00",
+          "summary": "抵達京都的第一碗拉麵。飯店步行約 10–12 分，不需搭車。",
+          "pages": [
+            5
+          ],
+          "status": "pdf",
+          "timeLabel": "約 22:00",
+          "address": "京都市下京区東塩小路向畑町845",
+          "menu": [
+            "招牌拉麵"
+          ],
+          "hours": "原書週六至 01:00；出發前重查",
+          "sourceIds": [
+            "asahi"
+          ],
+          "note": "步行與排隊時間另計；若航班延誤，先確認是否仍收客。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2026-11-01",
+      "city": "京都",
+      "title": "沿著東山，慢慢走",
+      "subtitle": "清水寺・二寧坂・祇園的午後",
+      "pages": [
+        4,
+        6,
+        7
+      ],
+      "alerts": [
+        "18:30 弘燒肉：原書記載訂位，尚無訂位憑證。",
+        "07:45 不搭 EX100；返程 EX100 末班時刻須現場重查。"
+      ],
+      "stops": [
+        {
+          "id": "d2-start",
+          "kind": "transport",
+          "name": "飯店 → 京都站前 D2",
+          "time": "07:30",
+          "summary": "八條口入站，穿南北自由通路到烏丸口／中央口。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "from": "都ホテル 京都八条",
+          "to": "京都駅前 バス D2",
+          "mode": "walking",
+          "duration": "跨站移動另留緩衝"
+        },
+        {
+          "id": "d2-bus",
+          "kind": "transport",
+          "name": "京都市巴士 206 → 五條坂",
+          "time": "07:45",
+          "summary": "往三十三間堂・清水寺・祇園方向，五條坂下車。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "timeLabel": "約 07:45",
+          "from": "京都駅前",
+          "to": "五条坂 バス停",
+          "mode": "transit",
+          "duration": "原書估 15–20 分",
+          "sourceIds": [
+            "kyotobus"
+          ],
+          "note": "當日候車與壅塞可能增加時間。EX100 早上較晚開行，這個時段不能替代 206。"
+        },
+        {
+          "id": "d2-taxi",
+          "kind": "transport",
+          "name": "五條坂上坡・計程車或步行",
+          "time": "",
+          "summary": "原書建議上坡段改搭 Uber／計程車；仍需走最後 5–10 分。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "timeLabel": "下車後",
+          "from": "五条坂",
+          "to": "清水寺 仁王門",
+          "mode": "walking",
+          "note": "車輛無法直達仁王門。是否能接單、下車位置由現場交通規定決定。"
+        },
+        {
+          "id": "d2-kiyomizu",
+          "kind": "sight",
+          "name": "清水寺",
+          "time": "09:00",
+          "summary": "從山上開始，之後順著清水坂一路下坡。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "address": "京都市東山区清水1丁目294",
+          "hours": "原書 06:00 開門；閉門及夜間特別參拜請查官網",
+          "duration": "原書未列停留時間",
+          "sourceIds": [
+            "kiyomizu"
+          ]
+        },
+        {
+          "id": "d2-unawa",
+          "kind": "food",
+          "name": "京うな和本店 清水はなれ",
+          "time": "10:00",
+          "summary": "清水寺沿清水坂下行約 5 分，鰻魚飯早午餐。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "address": "京都市東山区五条橋東6丁目583番地104",
+          "menu": [
+            "鰻魚飯",
+            "うな玉丼"
+          ],
+          "hours": "10:00–19:00，L.O. 18:30（查證時）",
+          "budget": "うな玉丼 ¥3,850（查證時；以現場為準）",
+          "sourceIds": [
+            "unawa",
+            "unawamenu"
+          ]
+        },
+        {
+          "id": "d2-slopes",
+          "kind": "sight",
+          "name": "產寧坂 → 二寧坂",
+          "time": "",
+          "summary": "順清水坂接三年坂、二年坂，下坡散策。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "timeLabel": "餐後",
+          "to": "産寧坂 京都",
+          "mode": "walking",
+          "sourceIds": [
+            "gion"
+          ],
+          "note": "石階不平，雨天慢走；不要站在狹窄階梯中央拍照。"
+        },
+        {
+          "id": "d2-gokago",
+          "kind": "food",
+          "name": "GOKAGO",
+          "time": "12:30",
+          "summary": "抹茶／焙茶休息。",
+          "pages": [
+            6
+          ],
+          "status": "pdf",
+          "address": "京都市東山区清水2-258",
+          "menu": [
+            "抹茶",
+            "焙茶"
+          ],
+          "hours": "PDF 10:30–18:00，未重新核實",
+          "sourceIds": [
+            "gokago"
+          ],
+          "note": "官方網站目前為密碼頁；現行菜單、價格與時間未確認。"
+        },
+        {
+          "id": "d2-dango",
+          "kind": "food",
+          "name": "月下美人",
+          "time": "13:30",
+          "summary": "二寧坂一帶的炙燒糰子。",
+          "pages": [
+            6,
+            7
+          ],
+          "status": "pdf",
+          "address": "京都市東山区桝屋町351-14",
+          "menu": [
+            "炙燒糰子"
+          ],
+          "hours": "未知",
+          "note": "未找到可核實營業時間的官方來源；勿依非官方自動摘要決定到訪時間。"
+        },
+        {
+          "id": "d2-park",
+          "kind": "sight",
+          "name": "寧寧之道・圓山公園",
+          "time": "",
+          "summary": "沿寧寧之道向北，經圓山公園，步行約 15–20 分。",
+          "pages": [
+            7
+          ],
+          "status": "pdf",
+          "timeLabel": "糰子之後",
+          "to": "円山公園 京都",
+          "mode": "walking",
+          "sourceIds": [
+            "gion"
+          ]
+        },
+        {
+          "id": "d2-yasaka",
+          "kind": "sight",
+          "name": "八坂神社",
+          "time": "15:00",
+          "summary": "從公園步行約 5–10 分，參拜祇園信仰的中心。",
+          "pages": [
+            7
+          ],
+          "status": "pdf",
+          "address": "京都市東山区祇園町北側625",
+          "duration": "PDF 建議 30–60 分",
+          "sourceIds": [
+            "yasaka"
+          ]
+        },
+        {
+          "id": "d2-gion",
+          "kind": "sight",
+          "name": "花見小路",
+          "time": "16:00",
+          "summary": "傳統町家與祇園街景，步行約 5–10 分。",
+          "pages": [
+            7
+          ],
+          "status": "pdf",
+          "address": "京都市東山区祇園町南側 花見小路",
+          "sourceIds": [
+            "gion"
+          ],
+          "note": "只在允許拍攝處取景；不追拍藝妓、舞妓，不進入私人巷道。"
+        },
+        {
+          "id": "d2-return",
+          "kind": "transport",
+          "name": "祇園 → 京都站・EX100",
+          "time": "17:30",
+          "summary": "步行約 3 分到祇園站牌，搭京都站方向。",
+          "pages": [
+            7
+          ],
+          "status": "pdf",
+          "timeLabel": "17:30 或 17:45",
+          "from": "祇園 バス停 京都",
+          "to": "京都駅前",
+          "mode": "transit",
+          "duration": "PDF 估 18 分，不含壅塞",
+          "budget": "PDF 成人 ¥500；請重查",
+          "sourceIds": [
+            "ex100"
+          ],
+          "urgent": true,
+          "note": "查證時官方週日表列 17:30、17:45；這是靜態時刻，非即時到站。錯過末班請用導航改查一般公車或地鐵。"
+        },
+        {
+          "id": "d2-hiro",
+          "kind": "food",
+          "name": "京の焼肉処 弘 八条口店",
+          "time": "18:30",
+          "summary": "京都站八條口步行約 5 分，和牛燒肉晚餐。",
+          "pages": [
+            7
+          ],
+          "status": "pdf",
+          "address": "京都市南区東九条南山王町25",
+          "menu": [
+            "和牛燒肉"
+          ],
+          "hours": "PDF 17:00–23:00，請重查",
+          "urgent": true,
+          "sourceIds": [
+            "hiro"
+          ],
+          "note": "PDF 標示 18:30 訂位；訂位憑證未提供，請在私人資料中補上。留意八條口店與八條口別邸為不同店。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "2026-11-02",
+      "city": "京都",
+      "title": "京都的日常滋味",
+      "subtitle": "錦市場・新京極・鴨川",
+      "pages": [
+        4,
+        8,
+        9
+      ],
+      "alerts": [
+        "錦天滿宮有 11:15／12:00／12:20 三種時間，待確認；不自動選定。",
+        "p.9「從飯店步行 5–6 分到錦天滿宮」與上午動線不符；依市場向東路線移動。"
+      ],
+      "stops": [
+        {
+          "id": "d3-start",
+          "kind": "transport",
+          "name": "飯店 → 地下鐵京都站",
+          "time": "09:25",
+          "summary": "八條口進站，跟地下鐵烏丸線指標。",
+          "pages": [
+            8
+          ],
+          "status": "pdf",
+          "from": "都ホテル 京都八条",
+          "to": "京都駅 地下鉄",
+          "mode": "walking"
+        },
+        {
+          "id": "d3-metro",
+          "kind": "transport",
+          "name": "烏丸線・京都 → 四條",
+          "time": "09:35",
+          "summary": "往國際會館，2 站約 4 分，不需轉乘。",
+          "pages": [
+            8
+          ],
+          "status": "pdf",
+          "from": "京都駅",
+          "to": "四条駅 京都 地下鉄",
+          "mode": "transit",
+          "note": "出站步行約 3–5 分到錦市場西側。時刻為行程目標，非指定班次。"
+        },
+        {
+          "id": "d3-walk",
+          "kind": "transport",
+          "name": "四條站 → 錦市場西側",
+          "time": "09:45",
+          "summary": "出站後步行約 3–5 分鐘，前往錦市場西側入口。",
+          "pages": [
+            8
+          ],
+          "status": "pdf",
+          "from": "四条駅 京都 地下鉄",
+          "to": "錦市場 西入口",
+          "mode": "walking"
+        },
+        {
+          "id": "d3-market",
+          "kind": "shopping",
+          "name": "錦市場・由西往東",
+          "time": "10:00",
+          "summary": "品嚐玉子燒、漬物與京都小吃。",
+          "pages": [
+            8
+          ],
+          "status": "pdf",
+          "to": "錦市場 京都",
+          "menu": [
+            "玉子燒",
+            "漬物"
+          ],
+          "sourceIds": [
+            "nishiki"
+          ],
+          "note": "禁止邊走邊吃；購買後在店內或店前指定區享用。各攤營業時間不同。"
+        },
+        {
+          "id": "d3-fumiya",
+          "kind": "food",
+          "name": "冨美家 錦店",
+          "time": "11:00",
+          "summary": "鍋燒烏龍麵午餐，錦市場內步行移動。",
+          "pages": [
+            8
+          ],
+          "status": "pdf",
+          "address": "京都市中京区錦小路通堺町西入中魚屋町493",
+          "menu": [
+            "冨美家鍋／鍋燒烏龍麵"
+          ],
+          "duration": "PDF 建議 45–60 分",
+          "hours": "11:00–17:00 最後點餐（查證時）；店休重查",
+          "sourceIds": [
+            "fumiya"
+          ]
+        },
+        {
+          "id": "d3-tenmangu",
+          "kind": "sight",
+          "name": "錦天滿宮",
+          "time": "",
+          "summary": "市場最東端，參拜後往新京極。",
+          "pages": [
+            4,
+            8,
+            9
+          ],
+          "status": "conflict",
+          "timeLabel": "時間待確認",
+          "address": "京都市中京区新京極通四条上る中之町537",
+          "hours": "PDF 08:00–20:00，請重查",
+          "sourceIds": [
+            "tenmangu"
+          ],
+          "note": "p.4 11:15；p.8 12:00；p.9 12:20。保留來源差異。"
+        },
+        {
+          "id": "d3-arcades",
+          "kind": "shopping",
+          "name": "新京極商店街・寺町通",
+          "time": "",
+          "summary": "兩條平行商店街，伴手禮、藥妝與美食。",
+          "pages": [
+            4,
+            9
+          ],
+          "status": "conflict",
+          "timeLabel": "11:30／12:40 待確認",
+          "to": "新京極商店街 京都",
+          "sourceIds": [
+            "tax",
+            "shinkyogoku"
+          ],
+          "note": "p.4 11:30；p.9 12:40。免稅新制已於 11/1 生效；結帳前確認是否為免稅店、退稅方式與手續費。"
+        },
+        {
+          "id": "d3-river",
+          "kind": "sight",
+          "name": "四條大橋・鴨川",
+          "time": "16:30",
+          "summary": "從新京極／河原町步行約 8–10 分，沿河散步。",
+          "pages": [
+            9
+          ],
+          "status": "pdf",
+          "to": "四条大橋 京都",
+          "sourceIds": [
+            "gion"
+          ],
+          "note": "河岸階梯與水邊留意腳步；垃圾自行帶走。"
+        },
+        {
+          "id": "d3-return",
+          "kind": "transport",
+          "name": "四條 → 京都・烏丸線",
+          "time": "17:45",
+          "summary": "四條大橋沿四條通往西走約 12–15 分到四條站，往竹田 2 站。",
+          "pages": [
+            9
+          ],
+          "status": "pdf",
+          "from": "四条駅 京都",
+          "to": "京都駅",
+          "mode": "transit",
+          "duration": "地鐵約 4 分；步行與候車另計"
+        },
+        {
+          "id": "d3-rest",
+          "kind": "hotel",
+          "name": "返回都ホテル 京都八条",
+          "time": "18:10",
+          "summary": "八條口步行約 2 分，晚餐前休息。",
+          "pages": [
+            9
+          ],
+          "status": "pdf",
+          "address": "京都市南区西九条院町17",
+          "sourceIds": [
+            "miyako"
+          ]
+        },
+        {
+          "id": "d3-arata",
+          "kind": "food",
+          "name": "あらた・御好燒",
+          "time": "19:00",
+          "summary": "18:45 從飯店出發，步行約 5–6 分。",
+          "pages": [
+            9
+          ],
+          "status": "pdf",
+          "address": "京都市南区西九条院町24-4",
+          "menu": [
+            "あらたのお好み"
+          ],
+          "hours": "PDF 17:00–23:00、週日休；未重新核實",
+          "sourceIds": [
+            "arata"
+          ],
+          "note": "帶現金；用餐與收卡規定須現場確認。"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "2026-11-03",
+      "city": "京都",
+      "title": "達摩、金閣與竹林",
+      "subtitle": "KKday 一日遊・時間依憑證為準",
+      "pages": [
+        4,
+        10,
+        11
+      ],
+      "alerts": [
+        "集合時間缺漏，地點「八條口」與「京都塔前」位於車站不同側。必須看原始憑證，請勿直接導航到猜測地點。",
+        "p.11 將中村藤吉本店放入嵐山小吃；官方本店在宇治，並不在嵐山。本頁小吃只作候選。"
+      ],
+      "stops": [
+        {
+          "id": "d4-meeting",
+          "kind": "transport",
+          "name": "KKday 集合點・待核對",
+          "time": "",
+          "summary": "原書寫京都站八條口（京都塔前），兩者不同側；不提供誤導導航。",
+          "pages": [
+            10
+          ],
+          "status": "conflict",
+          "timeLabel": "集合時間未知",
+          "urgent": true,
+          "note": "請先核對 KKday 訂單憑證的地點、集合時間、車號與聯絡方式。提早至少 10 分鐘；不要將 09:00 勝尾寺時間當作集合時間。"
+        },
+        {
+          "id": "d4-katsuo",
+          "kind": "sight",
+          "name": "勝尾寺",
+          "time": "09:00",
+          "summary": "接駁車行程，從京都出發車程原書估約 1 小時 30 分。",
+          "pages": [
+            10
+          ],
+          "status": "pdf",
+          "timeLabel": "約 09:00",
+          "to": "勝尾寺 大阪 箕面",
+          "navigation": "place",
+          "sourceIds": [
+            "katsuo"
+          ],
+          "note": "所有一日遊時間只為原書參考，依導遊與道路狀況調整。"
+        },
+        {
+          "id": "d4-kinkaku",
+          "kind": "sight",
+          "name": "金閣寺",
+          "time": "11:30",
+          "summary": "勝尾寺出發，原書估車程約 1 小時 15 分。",
+          "pages": [
+            10
+          ],
+          "status": "pdf",
+          "timeLabel": "約 11:30",
+          "address": "京都市北区金閣寺町1",
+          "navigation": "place",
+          "sourceIds": [
+            "kinkaku"
+          ]
+        },
+        {
+          "id": "d4-arashiyama",
+          "kind": "sight",
+          "name": "嵐山・竹林與渡月橋",
+          "time": "14:00",
+          "summary": "金閣寺出發原書估約 30 分；自由時間依導遊集合安排。",
+          "pages": [
+            10,
+            11
+          ],
+          "status": "pdf",
+          "timeLabel": "約 14:00",
+          "to": "渡月橋 京都",
+          "navigation": "place",
+          "sourceIds": [
+            "arashiyama"
+          ],
+          "note": "PDF 提及自由時間 2–3 小時；以當日車上公告為準。先記回程集合點，餐廳不必全部走。"
+        },
+        {
+          "id": "d4-arabica",
+          "kind": "food",
+          "name": "% ARABICA Kyoto Arashiyama",
+          "time": "",
+          "summary": "嵐山咖啡候選，非固定必訪行程。",
+          "pages": [
+            11
+          ],
+          "status": "pdf",
+          "timeLabel": "自由時間・選配",
+          "to": "% ARABICA Kyoto Arashiyama",
+          "optional": true,
+          "menu": [
+            "咖啡／拿鐵"
+          ],
+          "sourceIds": [
+            "arabica"
+          ],
+          "note": "PDF 另提抹茶拿鐵，現行供應未確認；排隊太長就略過。"
+        },
+        {
+          "id": "d4-snacks",
+          "kind": "food",
+          "name": "嵐山小吃候選・待核實",
+          "time": "",
+          "summary": "原書兩次標「嵐山よしむら」，卻分別稱為糰子與和菓子店，可能誤植。",
+          "pages": [
+            11
+          ],
+          "status": "conflict",
+          "timeLabel": "選配・店名待確認",
+          "optional": true,
+          "note": "不自動導向同名店，不宣稱其販售生八橋或糰子。中村藤吉本店在宇治，請勿依此頁前往。"
+        },
+        {
+          "id": "d4-return",
+          "kind": "transport",
+          "name": "接駁車返回京都站",
+          "time": "17:30",
+          "summary": "原書嵐山 → 京都站估約 30 分，行程解散。",
+          "pages": [
+            10
+          ],
+          "status": "pdf",
+          "timeLabel": "約 17:30",
+          "to": "京都駅",
+          "navigation": "place",
+          "note": "實際解散位置與時間依旅行社安排；原書未提供晚餐。"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "2026-11-04",
+      "city": "大阪",
+      "title": "從京都，走進大阪",
+      "subtitle": "梅田購物・心齋橋・道頓堀夜色",
+      "pages": [
+        4,
+        12,
+        13
+      ],
+      "alerts": [
+        "午餐 p.4 13:00；p.12 11:45，實際用餐時間須看訂位。",
+        "遊船 p.4 記已預約 18:30，p.13 記 18:00 起；須以票券確認。"
+      ],
+      "stops": [
+        {
+          "id": "d5-out",
+          "kind": "hotel",
+          "name": "都ホテル 京都八条・退房",
+          "time": "09:00",
+          "summary": "步行至 JR 京都站，八條口約 2 分。",
+          "pages": [
+            12
+          ],
+          "status": "pdf",
+          "address": "京都市南区西九条院町17",
+          "sourceIds": [
+            "miyako"
+          ]
+        },
+        {
+          "id": "d5-jr",
+          "kind": "transport",
+          "name": "JR 京都線新快速 → 大阪",
+          "time": "09:20",
+          "summary": "京都站往大阪方向，原書估約 30 分，不含候車。",
+          "pages": [
+            12
+          ],
+          "status": "pdf",
+          "timeLabel": "09:20 起",
+          "from": "京都駅",
+          "to": "大阪駅",
+          "mode": "transit",
+          "sourceIds": [
+            "jrmap"
+          ],
+          "note": "搭新快速，不需新幹線；具體班次與月台到站確認。"
+        },
+        {
+          "id": "d5-luggage",
+          "kind": "hotel",
+          "name": "VIA INN 心齋橋・寄放行李",
+          "time": "10:20",
+          "summary": "大阪站走到梅田 M16，御堂筋線往天王寺方向，心齋橋 M19 下。",
+          "pages": [
+            12
+          ],
+          "status": "pdf",
+          "address": "大阪市中央区西心斎橋1丁目10番15号",
+          "from": "大阪駅",
+          "to": "ヴィアイン心斎橋 大阪市中央区西心斎橋1丁目10番15号",
+          "mode": "transit",
+          "duration": "3 站約 7 分；8 號出口步行約 2 分",
+          "sourceIds": [
+            "viainn",
+            "metro"
+          ],
+          "note": "寄放行李與正式入住時間不同；房型、訂位與寄物規定請飯店確認。"
+        },
+        {
+          "id": "d5-umeda",
+          "kind": "transport",
+          "name": "四橋 → 西梅田・四橋線",
+          "time": "11:15",
+          "summary": "飯店步行約 5–8 分到四橋 Y14，往西梅田 Y11，3 站約 7 分。",
+          "pages": [
+            12
+          ],
+          "status": "pdf",
+          "from": "四ツ橋駅",
+          "to": "西梅田駅",
+          "mode": "transit",
+          "sourceIds": [
+            "metro"
+          ]
+        },
+        {
+          "id": "d5-shabu",
+          "kind": "food",
+          "name": "しゃぶ禅 梅田店",
+          "time": "",
+          "summary": "堂島 AVANZA B1，和牛涮涮鍋／壽喜燒午餐。",
+          "pages": [
+            4,
+            12
+          ],
+          "status": "conflict",
+          "timeLabel": "11:45／13:00 待確認",
+          "address": "大阪市北区堂島1丁目6番20号 堂島アバンザ地下1階",
+          "menu": [
+            "和牛涮涮鍋",
+            "壽喜燒（依預約方案）"
+          ],
+          "hours": "午餐 11:45–15:00，L.O.14:00（查證時）",
+          "urgent": true,
+          "sourceIds": [
+            "shabu"
+          ],
+          "note": "p.4 13:00；p.12 11:45。確認訂位時間與套餐，價格未提供。"
+        },
+        {
+          "id": "d5-shopping",
+          "kind": "shopping",
+          "name": "梅田商圈",
+          "time": "13:30",
+          "summary": "餐廳步行約 10–15 分至大阪站周邊，自由購物。",
+          "pages": [
+            12
+          ],
+          "status": "pdf",
+          "to": "梅田 大阪駅",
+          "sourceIds": [
+            "tax"
+          ],
+          "note": "購物後預留回心齋橋及遊船報到的時間。"
+        },
+        {
+          "id": "d5-shinsaibashi",
+          "kind": "shopping",
+          "name": "心齋橋筋商店街",
+          "time": "17:30",
+          "summary": "梅田 M16 → 心齋橋 M19，御堂筋線往天王寺，3 站約 7 分。",
+          "pages": [
+            13
+          ],
+          "status": "pdf",
+          "from": "梅田駅 大阪",
+          "to": "心斎橋駅",
+          "mode": "transit",
+          "sourceIds": [
+            "shinsaibashi",
+            "metro"
+          ],
+          "note": "PDF 總覽另列 PARCO，可視時間加逛。"
+        },
+        {
+          "id": "d5-glico",
+          "kind": "sight",
+          "name": "道頓堀・戎橋",
+          "time": "",
+          "summary": "沿商店街向南走約 10–15 分，在固力果看板附近拍照。",
+          "pages": [
+            13
+          ],
+          "status": "pdf",
+          "timeLabel": "接著",
+          "to": "戎橋 大阪",
+          "sourceIds": [
+            "dotonbori"
+          ]
+        },
+        {
+          "id": "d5-cruise",
+          "kind": "activity",
+          "name": "Wonder Cruise・日本橋碼頭",
+          "time": "",
+          "summary": "戎橋沿河向東約 8–12 分；道頓堀 1-1-6 河岸 B1。",
+          "pages": [
+            4,
+            13
+          ],
+          "status": "conflict",
+          "timeLabel": "18:00 起／預約 18:30 待確認",
+          "address": "大阪市中央区道頓堀1-1-6 日本橋船着場",
+          "duration": "PDF 約 20 分",
+          "urgent": true,
+          "sourceIds": [
+            "cruise"
+          ],
+          "note": "至少提前 15 分鐘報到；實際班次以憑證、當日營運為準。"
+        },
+        {
+          "id": "d5-gyukatsu",
+          "kind": "food",
+          "name": "牛かつもと村 道頓堀店",
+          "time": "19:00",
+          "summary": "下船後向戎橋方向返回，步行合計原書估 10–15 分。",
+          "pages": [
+            13
+          ],
+          "status": "pdf",
+          "address": "大阪市中央区心斎橋筋2-4-2 グルカスシティビルB1階",
+          "menu": [
+            "牛排炸牛カツ定食"
+          ],
+          "hours": "11:00–22:00，L.O.21:30（查證時）",
+          "sourceIds": [
+            "motomura"
+          ],
+          "note": "原書中文寫元村；現行官網店名もと村。排隊可能影響用餐時間。p.4「$400」幣別不明，不轉作日幣預算。"
+        },
+        {
+          "id": "d5-toriki",
+          "kind": "food",
+          "name": "鳥貴族・西心齋橋店候選",
+          "time": "22:00",
+          "summary": "原書建議串燒宵夜，西心齋橋 2-4-17。",
+          "pages": [
+            4,
+            13
+          ],
+          "status": "pdf",
+          "timeLabel": "22:00 起・選配",
+          "address": "大阪市中央区西心斎橋2-4-17",
+          "optional": true,
+          "menu": [
+            "串燒"
+          ],
+          "hours": "平日 17:00–翌 01:00；週末 16:00–翌 01:00（查證時）",
+          "sourceIds": [
+            "toriki"
+          ],
+          "note": "官方確認西心齋橋 2-4-17 1F。原書推薦串燒，但未見訂位；臨時營業變更請再查官網。和牛三明治未提供店名，保留待確認。"
+        },
+        {
+          "id": "d5-return",
+          "kind": "transport",
+          "name": "步行回 VIA INN 心齋橋",
+          "time": "",
+          "summary": "宵夜後步行約 10–15 分返回休息。",
+          "pages": [
+            13
+          ],
+          "status": "pdf",
+          "timeLabel": "宵夜後",
+          "to": "ヴィアイン心斎橋",
+          "mode": "walking",
+          "sourceIds": [
+            "viainn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "2026-11-05",
+      "city": "大阪",
+      "title": "把一天，交給冒險",
+      "subtitle": "USJ・任天堂・魔法世界",
+      "pages": [
+        4,
+        14,
+        15
+      ],
+      "alerts": [
+        "12:00 任天堂確約券僅見 PDF 備註，未附實際票券。必須核對入區資格與二次入區規則。",
+        "07:15 是原書抵達排隊目標，不是已查證開園時間。表演、設施營運、排隊看官方 App。"
+      ],
+      "stops": [
+        {
+          "id": "d6-transit",
+          "kind": "transport",
+          "name": "心齋橋 → 大正 → 西九條 → 環球城",
+          "time": "",
+          "summary": "長堀鶴見綠地線往大正，轉 JR 環狀線往弁天町、西九條，再轉夢咲線往櫻島。",
+          "pages": [
+            14
+          ],
+          "status": "pdf",
+          "timeLabel": "出發時間未提供",
+          "from": "心斎橋駅",
+          "to": "ユニバーサルシティ駅",
+          "mode": "transit",
+          "duration": "PDF 預留 45–60 分；站到園門步行 5–10 分",
+          "sourceIds": [
+            "usjaccess",
+            "metro"
+          ],
+          "note": "p.4 另列難波轉阪神路線，與詳頁不同。詳頁為可行方案，導航將依當日營運另給建議，並非鎖定車次。"
+        },
+        {
+          "id": "d6-gate",
+          "kind": "activity",
+          "name": "USJ 大門・排隊目標",
+          "time": "07:15",
+          "summary": "實際開園時間以官網為準；先準備門票與官方 App。",
+          "pages": [
+            14
+          ],
+          "status": "pdf",
+          "to": "ユニバーサルスタジオジャパン",
+          "urgent": true,
+          "sourceIds": [
+            "usj"
+          ]
+        },
+        {
+          "id": "d6-mario",
+          "kind": "activity",
+          "name": "瑪利歐賽車・耀西冒險",
+          "time": "",
+          "summary": "若早上有入區資格，先申請奇諾比奧餐廳，再依排隊安排設施。",
+          "pages": [
+            14
+          ],
+          "status": "pdf",
+          "timeLabel": "早上・視入區資格",
+          "to": "スーパー ニンテンドー ワールド USJ",
+          "sourceIds": [
+            "usjnintendo"
+          ],
+          "note": "若早上無法入區，先玩魔法世界與大白鯊；不要假定可以二次入區。"
+        },
+        {
+          "id": "d6-harry",
+          "kind": "activity",
+          "name": "哈利波特・禁忌之旅與城堡",
+          "time": "",
+          "summary": "任天堂步行原書估 10–15 分到魔法世界。",
+          "pages": [
+            14
+          ],
+          "status": "pdf",
+          "timeLabel": "順路・依排隊調整",
+          "to": "ウィザーディング ワールド オブ ハリーポッター USJ",
+          "sourceIds": [
+            "usj"
+          ],
+          "note": "步行參觀城堡的開放方式須現場詢問，非保證提供。"
+        },
+        {
+          "id": "d6-jaws",
+          "kind": "activity",
+          "name": "大白鯊 JAWS",
+          "time": "",
+          "summary": "魔法世界往親善村步行原書估 5–10 分，預留返回任天堂的時間。",
+          "pages": [
+            14
+          ],
+          "status": "pdf",
+          "timeLabel": "午前候選",
+          "to": "ジョーズ USJ",
+          "sourceIds": [
+            "usj"
+          ]
+        },
+        {
+          "id": "d6-entry",
+          "kind": "activity",
+          "name": "任天堂園區・確約時間核對",
+          "time": "12:00",
+          "summary": "依 PDF 記載的 12:00 確約時間，務必核對實際票券。",
+          "pages": [
+            14,
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "12:00・未見憑證",
+          "urgent": true,
+          "to": "スーパー ニンテンドー ワールド USJ",
+          "sourceIds": [
+            "usjnintendo"
+          ],
+          "note": "餐廳預約不等於園區入場資格。"
+        },
+        {
+          "id": "d6-lunch",
+          "kind": "food",
+          "name": "奇諾比奧餐廳",
+          "time": "13:00",
+          "summary": "原書用餐目標 13:00–14:00，並未提供餐廳預約。",
+          "pages": [
+            14,
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "13:00–14:00 目標",
+          "to": "キノピオ カフェ USJ",
+          "sourceIds": [
+            "usjnintendo"
+          ],
+          "note": "依可預約時段調整；原書 13:00 遊行說法未核實當日場次。"
+        },
+        {
+          "id": "d6-water",
+          "kind": "activity",
+          "name": "水世界特技表演",
+          "time": "",
+          "summary": "任天堂出口步行約 5–10 分，提早 15–20 分等候。",
+          "pages": [
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "午餐後・看當日場次",
+          "to": "ウォーターワールド USJ",
+          "sourceIds": [
+            "usj"
+          ],
+          "note": "帶雨衣；原書建議後排，仍可能濺濕。"
+        },
+        {
+          "id": "d6-jurassic",
+          "kind": "activity",
+          "name": "侏羅紀公園・乘船遊",
+          "time": "",
+          "summary": "水世界步行約 5–10 分，搭乘前確認當日營運。",
+          "pages": [
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "依開放情況",
+          "to": "ジュラシック パーク USJ",
+          "sourceIds": [
+            "usj"
+          ],
+          "note": "落水俯衝可能濺濕，注意身高限制與設施警告。"
+        },
+        {
+          "id": "d6-minion",
+          "kind": "activity",
+          "name": "小小兵瘋狂乘車遊",
+          "time": "",
+          "summary": "侏羅紀公園步行原書估 10–15 分，留時間看晚間活動。",
+          "pages": [
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "下午・依排隊調整",
+          "to": "ミニオン パーク USJ",
+          "sourceIds": [
+            "usj"
+          ]
+        },
+        {
+          "id": "d6-halloween",
+          "kind": "activity",
+          "name": "萬聖節限定活動",
+          "time": "",
+          "summary": "2026 官方秋季活動涵蓋 11/5；具體場次依當日 App。",
+          "pages": [
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "晚間",
+          "to": "ユニバーサルスタジオジャパン",
+          "sourceIds": [
+            "halloween"
+          ],
+          "note": "部分恐怖活動有年齡與資格限制，請依官方說明選擇。"
+        },
+        {
+          "id": "d6-return",
+          "kind": "transport",
+          "name": "環球城 → 西九條 → 大正 → 心齋橋",
+          "time": "",
+          "summary": "JR 夢咲線、環狀線，再轉長堀鶴見綠地線往門真南。",
+          "pages": [
+            15
+          ],
+          "status": "pdf",
+          "timeLabel": "散場後",
+          "from": "ユニバーサルシティ駅",
+          "to": "心斎橋駅",
+          "mode": "transit",
+          "duration": "PDF 預留 45–60 分",
+          "sourceIds": [
+            "usjaccess"
+          ],
+          "note": "查末班與散場人潮；不要把估計時間當作列車時刻。"
+        },
+        {
+          "id": "d6-dinner",
+          "kind": "food",
+          "name": "鳥貴族・晚餐候選",
+          "time": "",
+          "summary": "總覽列為第六天晚餐；USJ 詳頁未安排餐廳與用餐時段。",
+          "pages": [
+            4,
+            15
+          ],
+          "status": "unknown",
+          "timeLabel": "時間／分店待確認",
+          "optional": true,
+          "note": "未指定分店，不提供猜測地址。可依散場時間與營業情況自行決定；不要依此推定已有訂位。"
+        },
+        {
+          "id": "d6-snack",
+          "kind": "food",
+          "name": "心齋橋和牛三明治・宵夜候選",
+          "time": "",
+          "summary": "原書僅列品項，未提供店名與地址。",
+          "pages": [
+            4
+          ],
+          "status": "unknown",
+          "timeLabel": "時間／店家待確認",
+          "optional": true,
+          "note": "無可核實店家，不提供猜測導航。"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "2026-11-06",
+      "city": "大阪",
+      "title": "帶著回憶，回家",
+      "subtitle": "心齋橋・關西機場・高雄",
+      "pages": [
+        2,
+        4,
+        16
+      ],
+      "alerts": [
+        "原書寫往新大阪搭到難波，方向錯誤：應往天王寺／中百舌鳥方向 1 站。",
+        "南海最短 34 分指特急 Rapi:t；空港急行通常較久。ICOCA 不包含特急座位費。",
+        "先在 T1 4F 辦理報到與託運，再安檢、出境及免稅購物；原書 2F 免稅流程不宜照抄。"
+      ],
+      "stops": [
+        {
+          "id": "d7-out",
+          "kind": "hotel",
+          "name": "VIA INN 心齋橋・退房出發",
+          "time": "07:30",
+          "summary": "步行至心齋橋站約 5 分，檢查護照、行李、退稅物品。",
+          "pages": [
+            16
+          ],
+          "status": "pdf",
+          "address": "大阪市中央区西心斎橋1丁目10番15号",
+          "urgent": true,
+          "sourceIds": [
+            "viainn",
+            "tax"
+          ]
+        },
+        {
+          "id": "d7-metro",
+          "kind": "transport",
+          "name": "心齋橋 M19 → 難波 M20",
+          "time": "07:40",
+          "summary": "御堂筋線往天王寺／中百舌鳥方向 1 站。原書往新大阪方向錯誤，已依官方路線圖修正。",
+          "pages": [
+            16
+          ],
+          "status": "verified",
+          "timeLabel": "約 07:40 目標",
+          "from": "心斎橋駅",
+          "to": "なんば駅",
+          "mode": "transit",
+          "duration": "PDF 估約 2 分；步行轉乘另留緩衝",
+          "sourceIds": [
+            "metro"
+          ],
+          "note": "不是往梅田、新大阪。到站後跟南海線指標，地鐵難波與南海難波需步行。"
+        },
+        {
+          "id": "d7-nankai",
+          "kind": "transport",
+          "name": "南海難波 → 關西機場",
+          "time": "07:50",
+          "summary": "可選特急 Rapi:t 或空港急行；確切班次尚未確認。",
+          "pages": [
+            16
+          ],
+          "status": "pdf",
+          "timeLabel": "07:50 為原書目標，非已查證班次",
+          "from": "南海なんば駅",
+          "to": "関西空港駅",
+          "mode": "transit",
+          "duration": "官方：特急最快約 34 分／急行約 39 分",
+          "sourceIds": [
+            "nankai"
+          ],
+          "urgent": true,
+          "note": "轉乘只有 10 分鐘可能不足，請重查當日發車時間並提早。特急全車指定席另需特急券；不可只刷 ICOCA 上特急。"
+        },
+        {
+          "id": "d7-airport",
+          "kind": "transport",
+          "name": "關西機場 T1・先辦報到",
+          "time": "08:30",
+          "summary": "原書抵達目標 08:30；另寫最晚 09:30 前到機場。請保留足夠機場與退稅時間。",
+          "pages": [
+            16
+          ],
+          "status": "pdf",
+          "timeLabel": "08:30 抵達目標",
+          "to": "関西国際空港 第1ターミナル 国際線出発",
+          "mode": "walking",
+          "sourceIds": [
+            "kix",
+            "tax"
+          ],
+          "urgent": true,
+          "note": "國際線報到位於 T1 4F；先核對航空公司櫃檯、託運與退稅查驗流程，再安檢出境，勿依原書先逛 2F 免稅店。"
+        },
+        {
+          "id": "d7-gate",
+          "kind": "activity",
+          "name": "安檢・出境・前往登機口",
+          "time": "10:20",
+          "summary": "原書預留移動時段，登機口與登機截止時間依登機證。",
+          "pages": [
+            16
+          ],
+          "status": "pdf",
+          "to": "関西国際空港 第1ターミナル",
+          "urgent": true,
+          "sourceIds": [
+            "kix"
+          ],
+          "note": "10:20 不是已確認航空公司截止時間。退稅購物不能擠壓報到與登機。"
+        },
+        {
+          "id": "d7-flight",
+          "kind": "transport",
+          "name": "長榮 BR181・大阪 → 高雄",
+          "time": "11:55",
+          "summary": "KIX T1 11:55 出發 → KHH 14:30（台灣時間）。",
+          "pages": [
+            2,
+            16
+          ],
+          "status": "pdf",
+          "timeLabel": "11:55 日本",
+          "to": "高雄国際空港",
+          "urgent": true,
+          "note": "航班時間僅依 PDF，航空公司航況與航廈異動尚未查證。"
+        }
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "pages": [
+        2,
+        4,
+        5
+      ],
+      "title": "航班時間與飛行長度",
+      "detail": "去程機票頁 19:15；行程總覽與 Day 1 19:00。回程另標約 2 小時 35 分，與台日當地起降時間換算不符。均以電子機票為準。"
+    },
+    {
+      "pages": [
+        4,
+        8,
+        9
+      ],
+      "title": "錦天滿宮與新京極到訪時間",
+      "detail": "錦天滿宮 11:15／12:00／12:20 三種版本，新京極 11:30／12:40 兩種版本。App 保留未定時間。p.9 從飯店 400m 說法也與住宿位置不符。"
+    },
+    {
+      "pages": [
+        10
+      ],
+      "title": "一日遊集合點與集合時間",
+      "detail": "八條口在京都站南側，京都塔前在北側，原書混用；未提供集合時間。需原始 KKday 憑證。"
+    },
+    {
+      "pages": [
+        11
+      ],
+      "title": "嵐山小吃店名",
+      "detail": "中村藤吉本店在宇治；兩張「嵐山よしむら」卡卻分別描述糰子和和菓子。不可依插圖猜店。"
+    },
+    {
+      "pages": [
+        4,
+        12
+      ],
+      "title": "しゃぶ禅午餐",
+      "detail": "總覽 13:00，詳頁 11:45。官網開門 11:45 不代表預約時間。"
+    },
+    {
+      "pages": [
+        4,
+        13
+      ],
+      "title": "Wonder Cruise",
+      "detail": "總覽寫已預約 18:30；詳頁 18:00 起。以訂單確認時間。"
+    },
+    {
+      "pages": [
+        4,
+        14
+      ],
+      "title": "USJ 交通方案",
+      "detail": "總覽難波轉阪神；詳頁經大正轉 JR。兩者不同，App 保留詳頁路線並標示非指定車次。"
+    },
+    {
+      "pages": [
+        14,
+        15
+      ],
+      "title": "USJ 票券與遊行",
+      "detail": "12:00 確約券未見實際附件；13:00 遊行未查證當日場次。不得當成正式預約或官方表演時刻。"
+    },
+    {
+      "pages": [
+        16
+      ],
+      "title": "回程方向與機場流程修正",
+      "detail": "御堂筋線應往天王寺方向；34 分是特急最快時間；國際線先辦報到，再安檢出境。原書資訊已加警示。"
+    },
+    {
+      "pages": [
+        17
+      ],
+      "title": "費用人數與四捨五入",
+      "detail": "原書總額、每人金額與人數標示有矛盾，並有四捨五入差異。精確成本僅保留於使用者本機私人參考資料；未自動寫入帳本。"
+    },
+    {
+      "pages": [
+        4,
+        13
+      ],
+      "title": "晚餐與宵夜候選",
+      "detail": "總覽第六天晚餐鳥貴族、第五天元村；詳頁另列第五天 22:00 鳥貴族。兩晚均列和牛三明治但無店名。保留選配，時間與分店待確認。"
+    }
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "sources": [
+    {
+      "id": "viainnfaq",
+      "title": "VIA INN 心齋橋・入住與退房",
+      "url": "https://www.viainn.com/en/shinsaibashi/faq/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "標準入住 15:00／退房 10:00，實際預約方案可能不同。"
+      ]
+    },
+    {
+      "id": "toriki",
+      "title": "鳥貴族・西心齋橋店",
+      "url": "https://map.torikizoku.co.jp/detail/40/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "西心齋橋2-4-17 1F；平日17:00–翌01:00，週末16:00–翌01:00（查證時）；串燒餐廳。"
+      ]
+    },
+    {
+      "id": "yoshimura",
+      "title": "嵐山よしむら・官方",
+      "url": "https://yoshimura-gr.com/arashiyama/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "本店為手打蕎麥餐廳；原書描述成糰子／和菓子與官方店型不符。"
+      ]
+    },
+    {
+      "id": "japanemergency",
+      "title": "JNTO・日本緊急聯絡電話",
+      "url": "https://faq.japan-travel.jnto.go.jp/en/plan/hotline/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "警察 110；消防與救護 119。"
+      ]
+    },
+    {
+      "id": "kiyomizu",
+      "title": "清水寺・參觀與境內介紹",
+      "url": "https://www.kiyomizudera.or.jp/en/visit/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "仁王門、本堂、奧之院與音羽瀑布為主要參拜點。"
+      ]
+    },
+    {
+      "id": "miyako",
+      "title": "都ホテル 京都八条・交通與飯店資料",
+      "url": "https://www.miyakohotels.ne.jp/kyoto-hachijo/access/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "八條口步行約 2 分；京都市南区西九条院町17；+81-75-661-7111；標準入住 14:00／退房 11:00。"
+      ]
+    },
+    {
+      "id": "viainn",
+      "title": "VIA INN 心齋橋・飯店與交通",
+      "url": "https://www.viainn.com/en/shinsaibashi/access/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "心齋橋站 8 號出口步行約 2 分；西心斎橋1-10-15；+81-6-6121-5489。"
+      ]
+    },
+    {
+      "id": "haruka",
+      "title": "JR 西日本・WEST QR HARUKA",
+      "url": "https://www.westjr.co.jp/global/tc/ticket/westqr/haruka/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "提供旅客專用優惠票；資格與可乘區間依商品規定，票價需重新確認。"
+      ]
+    },
+    {
+      "id": "kyotobus",
+      "title": "京都市交通局・巴士系統查詢",
+      "url": "https://www2.city.kyoto.lg.jp/kotsu/busdia/keitou/keitou.htm",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "提供各系統路線與時刻查詢，班次需以旅行日資料再確認。"
+      ]
+    },
+    {
+      "id": "ex100",
+      "title": "京都市交通局・祇園 EX100 京都站方向",
+      "url": "https://www2.city.kyoto.lg.jp/kotsu/busdia/hyperdia/12730003.htm",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "查證時週日及假日 10:00–17:45 每 15 分鐘；靜態表，非即時營運。"
+      ]
+    },
+    {
+      "id": "asahi",
+      "title": "本家第一旭・店舗案內",
+      "url": "https://www.honke-daiichiasahi.com/shop.html",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "本店位置與營業資訊；臨時休業需出發前重查。"
+      ]
+    },
+    {
+      "id": "unawa",
+      "title": "京うな和本店 清水はなれ・店舗資訊",
+      "url": "https://kyo-unawa.com/kiyomizuinfo/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "五条橋東6丁目583番地104；10:00–19:00，L.O.18:30。"
+      ]
+    },
+    {
+      "id": "unawamenu",
+      "title": "京うな和・清水店菜單",
+      "url": "https://kyo-unawa.com/menu-kiyomizu/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "查證時うな玉丼含稅 ¥3,850，價格可能調整。"
+      ]
+    },
+    {
+      "id": "gokago",
+      "title": "GOKAGO 官方網站（密碼頁）",
+      "url": "https://gokago-kyoto.com/password",
+      "checked": "2026-10-25",
+      "confidence": "未核實",
+      "facts": [
+        "官網內容目前受限，不能核實現行時間與菜單；飲品建議僅源自 PDF。"
+      ]
+    },
+    {
+      "id": "yasaka",
+      "title": "八坂神社・歷史",
+      "url": "https://www.yasaka-jinja.or.jp/about/history/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "祇園祭源自祈求國家平安與消除疫病的祭禮。"
+      ]
+    },
+    {
+      "id": "gion",
+      "title": "京都觀光官方・祇園與清水地區",
+      "url": "https://kyoto.travel/en/areas/gion-kiyomizu/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "東山歷史街區；花見小路車輛通行，避免走在道路中央。"
+      ]
+    },
+    {
+      "id": "manners",
+      "title": "京都觀光官方・觀光禮儀",
+      "url": "https://kyoto.travel/en/news/sightseeing-guidelines/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "不可追逐舞妓藝妓、未經許可拍攝或進入私有地。"
+      ]
+    },
+    {
+      "id": "hiro",
+      "title": "京の焼肉処 弘・八條口店",
+      "url": "https://yakiniku-hiro.com/shop/hachijoguchi.php",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "京都站南側約步行 5 分；一頭買和牛燒肉。"
+      ]
+    },
+    {
+      "id": "nishiki",
+      "title": "錦市場・訪客須知",
+      "url": "https://www.kyoto-nishiki.or.jp/en/manner/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "請勿邊走邊吃；購買後於店內或店前指定位置用餐。"
+      ]
+    },
+    {
+      "id": "fumiya",
+      "title": "冨美家・直營餐廳",
+      "url": "https://www.kyoto-fumiya.co.jp/view/page/restaurant",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "錦店中魚屋町493；11:00–17:00 最後點餐；店休另見公告。"
+      ]
+    },
+    {
+      "id": "tenmangu",
+      "title": "錦天滿神社",
+      "url": "https://nishikitenmangu.or.jp/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "位於新京極通、錦市場正前方的街區鎮守。"
+      ]
+    },
+    {
+      "id": "arata",
+      "title": "關西觀光官方・あらた",
+      "url": "https://www.the-kansai-guide.com/ja/directory/item/21221/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "名物あらたのお好み，以牛下顎肉搭配御好燒；地址西九条院町24-4。"
+      ]
+    },
+    {
+      "id": "katsuo",
+      "title": "勝尾寺・勝ちダルマ",
+      "url": "https://katsuo-ji-temple.or.jp/worship/index.php",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "勝運信仰與達摩祈願文化。"
+      ]
+    },
+    {
+      "id": "kinkaku",
+      "title": "相國寺派・金閣寺",
+      "url": "https://www.shokoku-ji.jp/kinkakuji/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "鹿苑寺，通稱金閣寺；參拜時間與費用官網重查。"
+      ]
+    },
+    {
+      "id": "arashiyama",
+      "title": "京都觀光官方・嵐山",
+      "url": "https://www.kyoto.travel/en/areas/saga-arashiyama/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "嵐山地區資訊，竹林與渡月橋可在當地步行串接；步行時間依人潮。"
+      ]
+    },
+    {
+      "id": "arabica",
+      "title": "% ARABICA Kyoto Arashiyama",
+      "url": "https://arabica.com/en/location/arabica-kyoto-arashiyama/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "嵐山分店存在，可看嵐山風景享用咖啡；PDF 的抹茶拿鐵未核實。"
+      ]
+    },
+    {
+      "id": "tokichi",
+      "title": "中村藤吉・公司與本店所在地",
+      "url": "https://tokichi.jp/pages/company-profile",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "創業 1854 年；公司／本店位於京都府宇治市宇治壱番10，並非嵐山。"
+      ]
+    },
+    {
+      "id": "shabu",
+      "title": "しゃぶ禅 梅田店・店舗資訊",
+      "url": "https://www.shabuzen.jp/umeda/shopinfo/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "堂島 AVANZA B1；午餐 11:45–15:00，L.O.14:00；電話 +81-6-6743-4111。"
+      ]
+    },
+    {
+      "id": "cruise",
+      "title": "大阪觀光官方・Wonder Cruise",
+      "url": "https://osaka-info.jp/special/coolosaka/cool-spot/1215/",
+      "checked": "2026-10-25",
+      "confidence": "觀光機構",
+      "facts": [
+        "日本橋站附近可達；票券、班次、乘船點需按訂單重新核對。"
+      ]
+    },
+    {
+      "id": "motomura",
+      "title": "牛かつもと村・道頓堀店",
+      "url": "https://www.gyukatsu-motomura.com/store/Dotonbori",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "心斎橋筋2-4-2 B1；11:00–22:00，L.O.21:30；炸牛排可用石板炙烤。"
+      ]
+    },
+    {
+      "id": "metro",
+      "title": "Osaka Metro・官方路線圖",
+      "url": "https://subway.osakametro.co.jp/guide/page/osakametro_routemap_d/routemap_2025.pdf",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "M19 心齋橋下一站南向 M20 難波，應往天王寺／中百舌鳥方向。"
+      ]
+    },
+    {
+      "id": "nankai",
+      "title": "南海電鐵・關西機場交通",
+      "url": "https://www.nankai.co.jp/traffic/kix.html",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "特急最快約 34 分、空港急行約 39 分；全指定席特急需特急券。"
+      ]
+    },
+    {
+      "id": "kix",
+      "title": "關西機場・國際線出發流程",
+      "url": "https://www.kansai-airport.or.jp/node/66",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "請以機場現場與航空公司公告辦理報到、安檢、出境；樓層資訊出發前重查。"
+      ]
+    },
+    {
+      "id": "usj",
+      "title": "日本環球影城・官方",
+      "url": "https://www.usj.co.jp/web/ja/jp",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "設施、開園時間與表演場次須當日查詢；不把 PDF 排程當作營運保證。"
+      ]
+    },
+    {
+      "id": "usjaccess",
+      "title": "日本環球影城・交通",
+      "url": "https://www.usj.co.jp/web/ja/jp/access",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "JR 環球城站為園區主要鐵路入口，實際轉乘看當日路線。"
+      ]
+    },
+    {
+      "id": "usjnintendo",
+      "title": "USJ・超級任天堂世界",
+      "url": "https://www.usj.co.jp/web/ja/jp/areas/super-nintendo-world",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "園區入場、設施與餐廳資格需各別確認；私人確約券未提供。"
+      ]
+    },
+    {
+      "id": "halloween",
+      "title": "USJ・2026 秋季活動",
+      "url": "https://www.usj.co.jp/web/ja/jp/events/halloween-extreme-autumn-2026",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "秋季活動 2026/9/10–11/8；恐怖之夜 9/11–11/8，場次可變動。"
+      ]
+    },
+    {
+      "id": "tax",
+      "title": "日本海關・2026/11/1 退稅新制",
+      "url": "https://www.customs.go.jp/kaigairyoko/taxrefund_e.html",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "11/1 起購買的免稅商品採出境海關確認攜出後退稅；不再假設結帳即免稅。"
+      ]
+    },
+    {
+      "id": "emergency",
+      "title": "外交部・駐大阪辦事處聯絡資訊",
+      "url": "https://www.mofa.gov.tw/OverseasOffice_Content.aspx?n=168&os=85&s=142&sms=87",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "查證時官網列急難電話 +81-90-8794-4568；號碼可能異動，出國前請重新開啟來源核對。"
+      ]
+    },
+    {
+      "id": "weather",
+      "title": "Open-Meteo・Forecast API",
+      "url": "https://open-meteo.com/en/docs",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "最長 16 日預報，模型範圍不同；時間使用 Asia/Tokyo，免費 API 不提供服務保證。"
+      ]
+    },
+    {
+      "id": "jrmap",
+      "title": "JR 西日本・路線與時刻查詢",
+      "url": "https://www.westjr.co.jp/global/tc/timetable/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "京都至大阪及夢咲線班次可由官方查詢；不預設月台。"
+      ]
+    },
+    {
+      "id": "shinkyogoku",
+      "title": "新京極商店街",
+      "url": "https://shinkyogoku.or.jp/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "購物街店家資訊入口；營業時間依各店。"
+      ]
+    },
+    {
+      "id": "shinsaibashi",
+      "title": "心齋橋筋商店街",
+      "url": "https://www.shinsaibashi.or.jp/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "各商店時間與活動由商店街公告查詢。"
+      ]
+    },
+    {
+      "id": "dotonbori",
+      "title": "道頓堀商店會",
+      "url": "https://www.dotonbori.or.jp/",
+      "checked": "2026-10-25",
+      "confidence": "官方",
+      "facts": [
+        "道頓堀店家與地區資訊入口。"
+      ]
+    }
+  ],
+  "guides": [
+    {
+      "id": "g1",
+      "title": "清水寺・從奧之院望向舞台",
+      "pages": [
+        6
+      ],
+      "sourceIds": [
+        "kiyomizu"
+      ],
+      "category": "故事",
+      "text": "清水寺境內串起仁王門、本堂、奧之院與音羽瀑布。不要只在入口停留，沿順路參拜更能感受山坡地形。",
+      "tip": "拍照建議：在允許拍攝的奧之院一帶望向本堂；提早參拜，再沿清水坂下山，避免重複爬坡。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g2",
+      "title": "祇園祭背後的祈願",
+      "pages": [
+        7
+      ],
+      "sourceIds": [
+        "yasaka",
+        "manners"
+      ],
+      "category": "故事",
+      "text": "八坂神社與祇園祭緊密相連，祭禮源自祈求國家安寧與消除疫病。",
+      "tip": "神社建築與街景都值得慢看；花見小路不走路中央，不追拍舞妓，不進私人巷道。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g3",
+      "title": "京都的廚房・錦市場",
+      "pages": [
+        8
+      ],
+      "sourceIds": [
+        "nishiki"
+      ],
+      "category": "必吃美食",
+      "text": "原書推薦玉子燒、漬物與鍋燒烏龍麵。按市場西往東的順序，一次買少量慢慢試。",
+      "tip": "禁止邊走邊吃；在購買店家的指定位置吃完，再開始走。攤商時間不一致。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g4",
+      "title": "和牛與鰻魚的兩種京都",
+      "pages": [
+        6,
+        7
+      ],
+      "sourceIds": [
+        "unawa",
+        "unawamenu",
+        "hiro"
+      ],
+      "category": "必點菜單",
+      "text": "京うな和可選鰻魚飯；查證時うな玉丼含稅 ¥3,850。弘八條口店以和牛燒肉為主。",
+      "tip": "鰻魚店別走成四條本店；弘八條口店別誤訂新開的八條口別邸。所有價格以現場為準。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g5",
+      "title": "抹茶、焙茶與糰子",
+      "pages": [
+        6
+      ],
+      "sourceIds": [
+        "gokago"
+      ],
+      "category": "必吃美食",
+      "text": "GOKAGO 的抹茶／焙茶與月下美人炙燒糰子來自 PDF 推薦。",
+      "tip": "月下美人未找到可核實官方菜單；GOKAGO 官網受限。價格與營業時間未知，現場確認。",
+      "confidence": "unknown"
+    },
+    {
+      "id": "g6",
+      "title": "達摩不只代表結果",
+      "pages": [
+        10
+      ],
+      "sourceIds": [
+        "katsuo"
+      ],
+      "category": "故事",
+      "text": "勝尾寺的勝運信仰與達摩文化，傳達面對自己、累積努力的祈願。",
+      "tip": "散步找境內達摩與山景，拍照不移動供奉物；先記住接駁集合地點及時間。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g7",
+      "title": "金閣與鏡湖池",
+      "pages": [
+        10
+      ],
+      "sourceIds": [
+        "kinkaku"
+      ],
+      "category": "故事",
+      "text": "金閣寺正式名稱為鹿苑寺，通稱來自金色樓閣。",
+      "tip": "拍照建議：沿參拜動線找池畔開闊處看倒影；避免逆向回走擋住人潮。這是編輯建議，非場地保證。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g8",
+      "title": "嵐山自由時間，留一點空白",
+      "pages": [
+        10,
+        11
+      ],
+      "sourceIds": [
+        "arabica",
+        "tokichi",
+        "yoshimura"
+      ],
+      "category": "必吃美食",
+      "text": "% ARABICA 嵐山店可以賞景喝咖啡；中村藤吉本店位於宇治，原書將它放進嵐山頁容易走錯。",
+      "tip": "不為了餐廳繞去宇治。嵐山よしむら官方是手打蕎麥餐廳，與原書糰子／和菓子的描述不同，暫不作該小吃推薦。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g9",
+      "title": "選一份能帶回家的京都",
+      "pages": [
+        8,
+        9,
+        11
+      ],
+      "sourceIds": [
+        "nishiki",
+        "tax"
+      ],
+      "category": "必買伴手禮",
+      "text": "原書列漬物、茶與和菓子等方向；依保存方式與有效期限挑選，比一次買齊更實用。",
+      "tip": "11/1 起免稅制度改變。保留收據與商品，依海關及店家指示辦理退稅；生鮮肉類等攜入台灣限制另行確認。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g10",
+      "title": "道頓堀的炸牛排",
+      "pages": [
+        13
+      ],
+      "sourceIds": [
+        "motomura"
+      ],
+      "category": "必點菜單",
+      "text": "もと村的牛カツ可用石板炙烤，搭配店家提供的醬料或鹽。",
+      "tip": "自行炙烤時小心高溫；排隊若壓縮遊船報到，先完成時間固定的預約。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g11",
+      "title": "USJ：先確保入區資格",
+      "pages": [
+        14,
+        15
+      ],
+      "sourceIds": [
+        "usjnintendo",
+        "halloween"
+      ],
+      "category": "重要預約",
+      "text": "原書 12:00 任天堂確約與 13:00–14:00 用餐是兩件事。餐廳訂位不能替代園區入場券。",
+      "tip": "先確認真實票券、App 與入區規則。11/5 在官方秋季活動期間，表演場次與設施依當日公告。",
+      "confidence": "verified"
+    },
+    {
+      "id": "g12",
+      "title": "回程交通先留緩衝",
+      "pages": [
+        16
+      ],
+      "sourceIds": [
+        "nankai",
+        "metro",
+        "tax"
+      ],
+      "category": "交通提醒",
+      "text": "心齋橋到難波往南，不是往新大阪。難波轉南海還要站內步行。",
+      "tip": "特急與空港急行票券不同。退稅新制可能增加出境程序，先報到確認流程，再安排購物。",
+      "confidence": "verified"
+    }
+  ]
+}
